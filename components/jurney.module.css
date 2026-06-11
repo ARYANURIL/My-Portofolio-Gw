@@ -1,0 +1,49 @@
+.BarisKartu {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  background-color: transparent;
+  min-height: fit-content;
+}
+
+.kartu {
+  border: 1px solid #222222;
+  padding: 24px;
+  border-radius: 12px;
+  width: 300px;
+  background-color: #0d0d0d;
+  transition: border-color 0.3s;
+}
+
+.kartu:hover {
+  border-color: #facc15;
+}
+
+.judulKartu {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 0 12px 0;
+  font-family: serif;
+}
+
+.deskripsiKartu {
+  color: #a3a3a3;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.wadahKapsul {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.kapsul {
+  border: 1px solid #333333;
+  color: #e5e5e5;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #171717;
+}

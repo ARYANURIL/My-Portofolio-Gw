@@ -1,0 +1,71 @@
+@import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+
+:root {
+    --font-montserrat: 'Montserrat';
+    --kuning-cerah: #FFEA00;
+    --putih: white;
+}
+
+.teks_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 700px;
+}
+
+.creative {
+    font-family: var(--font-montserrat);
+    color: var(--kuning-cerah);
+    letter-spacing: 3px;
+}   
+
+.porto {
+    display: flex;
+}
+
+.petik {
+    color: var(--kuning-cerah);
+    font-family: sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.teks {
+    color: var(--putih);
+    font-family: var(--font-montserrat);
+    font-size: 80px;
+}
+
+.folio {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: -32px;
+}
+
+#teks {
+    -webkit-text-stroke: 1px white;
+    stroke: white;
+    color: transparent;
+    font-family: var(--font-montserrat);
+    font-size: 80px;
+    margin-bottom: 30px;   
+}
+
+.titik {
+    margin-top: 6px;
+    margin-left: 8px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-text-stroke: 10px var(--putih);
+    color: transparent;
+    background-color: transparent;
+}
+
+.hightlight {
+    color: var(--kuning-cerah);
+    font-family: sans-serif;
+    font-weight: bold;
+}

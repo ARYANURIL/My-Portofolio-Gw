@@ -1,0 +1,20 @@
+#img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+.foto {
+    border-radius: 20px;
+    background-color: #FFEA00;
+    padding: 10px;
+}
+
+.image {
+    border-radius: 20px;
+    width: 240px;
+    height: 285px;
+}

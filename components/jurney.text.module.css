@@ -1,0 +1,51 @@
+@import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+
+:root {
+    --font-montserrat: 'Montserrat';
+    --kuning-cerah: #FFEA00;
+    --putih: white;
+    --hitam-elegan: #0A0A0A;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: var(--hitam-elegan);
+}
+
+.text {
+    width: fit-content;
+    font-weight: bold;
+    color: var(--kuning-cerah);
+    font-family: var(--font-montserrat);
+    font-size: 30px;
+    border-bottom: 1px solid var(--kuning-cerah);
+    margin-left: 100px;
+}
+
+.text2 {
+    margin-top: 20px;
+    margin-left: 100px;
+    color: white;
+    font-family: var(--font-montserrat);
+    max-width: 800px;
+}
+
+.jurney {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
