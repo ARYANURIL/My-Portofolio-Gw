@@ -1,9 +1,10 @@
 :root {
     --kuning-cerah: #FFEA00;
     --hitam-elegan: #0A0A0A;
-    --font-montserrat: 'Montserrat' ;
+    --font-montserrat: 'Montserrat';
 }
 
+/* --- Ditambahkan Efek Animasi Scroll Awal (Disembunyikan) --- */
 .container {
     margin-left: 55px;
     display: flex;
@@ -13,6 +14,17 @@
     background-color: transparent;
     height: 400px;
     width: 400px;
+    
+    /* Logika animasi: mulai dari transparan dan bergeser dari kanan sejauh 40px */
+    opacity: 0;
+    transform: translateX(40px);
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.2s ease;
+}
+
+/* --- Ditambahkan Class Pemicu Saat Layar Sampai di Menu --- */
+.container.seen {
+    opacity: 1;
+    transform: translateX(0); /* Kembali ke posisi semula */
 }
 
 .skill {

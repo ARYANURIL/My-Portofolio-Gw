@@ -5,6 +5,9 @@
     width: 400px;
     height: 400px;
     margin-left: 50px;
+    opacity: 0;
+    transform: translateY(40px) scale(0.95); 
+    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .foto {
@@ -17,4 +20,9 @@
     border-radius: 20px;
     width: 240px;
     height: 285px;
+}
+
+#img.seen {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }

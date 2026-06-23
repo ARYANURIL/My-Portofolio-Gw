@@ -1,0 +1,385 @@
+@import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --kuning-cerah: #FFEA00;
+    --hitam-elegan: #0A0A0A;
+    --font-montserrat: 'Montserrat' ;
+    --abu-abu-gelap: #0d0d0d;
+    --abu-abu-cerah: #222222;
+    --font-intermie: 'Inter', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(45px);
+    transition: transform 1.1s cubic-bezier(0.215, 0.610, 0.355, 1), opacity 1.1s ease;
+}
+
+html, body {
+    -ms-overflow-style: none !important; 
+    scrollbar-width: none !important;  
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none !important; 
+}
+
+.text {
+    width: 1100px;
+    height: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: var(--font-intermie);
+}
+
+.teks {
+    background-color: transparent;
+    width: fit-content;
+    color: var(--kuning-cerah);
+    border-bottom: 1px solid var(--kuning-cerah);
+    font-family: var(--font-montserrat);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#text {
+    margin-top: 25px;
+    color: white;
+    width: 700px;
+}
+
+.box_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    margin-top: -120px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 400px;
+}
+
+.box_code_qr {
+    width: 200px;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 35px;
+}
+
+.code_qr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    background-color: var(--kuning-cerah);
+    height: 370px;  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#qr_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.firstTeks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+    width: fit-content;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+#text_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    color: black;
+    font-family: monospace;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.box_last_text {
+    background-color: transparent;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#last_text {
+    color: black;
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: transparent;
+    width: fit-content;
+}
+
+.box_all_card {
+    width: 208px;
+    height: 370px;
+    background-color: transparent;
+}
+
+.box_description {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--abu-abu-gelap);
+    border: 1px solid var(--abu-abu-cerah);
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+}
+
+.box_text {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+}
+
+#description {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.box_text_p {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 7px;
+}
+
+#description_p {
+    color: #9ca3af;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 2px;
+}
+
+.all_button_software {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    gap: 20px;
+    padding: 10px 0px;
+    align-self: stretch;
+}
+
+.button_to_web {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    background-color: var(--abu-abu-gelap);
+    border: 1px solid var(--abu-abu-cerah);
+    transition: border 0.3s ease;
+}
+
+.panah {
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.button_to_web:hover .panah {
+    transform: translateX(5px);
+    color: var(--kuning-cerah);
+
+} 
+
+.button_to_web:hover {
+    border: 1px solid white;
+}
+
+
+.box_form_container {
+  flex: 1.3;
+  min-width: 260px;
+  max-width: 360px;
+  background-color: var(--abu-abu-gelap);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.judul_form {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 14px 0;
+}
+
+.formulir {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grup_input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label_input {
+  font-size: 10px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.input_text, .input_textarea {
+  background-color: #0f0f12;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input_text:focus, .input_textarea:focus {
+  border-color: #FFEA00;
+  background-color: #111115;
+}
+
+.input_textarea {
+  resize: none;
+  height: 50px !important;
+  resize: none !important;
+}
+
+.tombol_submit {
+  background-color: #FFEA00;
+  color: black;
+  padding: 11px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 6px;
+  transition: all 0.3s ease;
+}
+
+.tombol_submit:hover {
+  background-color: #e6d200;
+  transform: translateY(-1px);
+}
+
+.tombol_submit:active {
+  transform: scale(0.98);
+}
+
+
+.popup_sukses {
+  position: absolute;
+  inset: 0;
+  background-color: #16161d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
+  z-index: 10;
+}
+
+.icon_sukses {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.judul_sukses {
+  color: #FFEA00;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.deskripsi_sukses {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.tombol_kembali {
+  background-color: #FFEA00;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.contact_seen {
+    opacity: 1;
+    transform: translateY(0);
+}

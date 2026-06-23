@@ -73,10 +73,14 @@
     display: inline-block;
     padding-bottom: 2px;
     border-bottom: 1px transparent;
+    transition: font-size .1s ease-in-out;
 }
 
 .brand a:hover {
-    border-bottom: 1px solid var(--kuning-cerah);
+    font-size: 16px;
     cursor: pointer;
-    transition: all .1s ease-in-out;
+}
+
+.activeMenu {
+    border-bottom: 1px solid var(--kuning-cerah) !important ;
 }

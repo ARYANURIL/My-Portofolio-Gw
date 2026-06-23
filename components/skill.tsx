@@ -1,8 +1,40 @@
+
+"use client"
+
+import { useEffect, useState, useRef } from 'react'
 import styles from './skill.module.css'
 
 export default function skill() {
+    const [isSeen, setIsSeen] = useState(false)
+    const containerRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsSeen(true)
+                }
+            },
+            { threshold: 0.15 }
+        )
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current)
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current)
+            }
+        }
+    }, [])
+
     return (
-        <div className={styles.container}>
+        <div 
+            ref={containerRef}
+            id='skill' 
+            className={`${styles.container} ${isSeen ? styles.seen : ''}`}
+        >
             <div className={styles.head_text}>
                 <h1 className={styles.head}>SKILLS</h1>
             </div>

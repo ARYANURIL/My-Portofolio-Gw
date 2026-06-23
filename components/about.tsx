@@ -1,8 +1,39 @@
+"use client"
+
+import { useEffect, useState, useRef } from 'react'
 import styles from './about.module.css'
 
 export default function about() {
+    const [isSeen, setIsSeen] = useState(false)
+    const elementRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsSeen(true)
+                }
+            },
+            { threshold: 0.1 } // Terpicu saat 10% elemen masuk layar
+        )
+
+        if (elementRef.current) {
+            observer.observe(elementRef.current)
+        }
+
+        return () => {
+            if (elementRef.current) {
+                observer.unobserve(elementRef.current)
+            }
+        }
+    }, [])
+
     return (
-        <div className={styles.teks_about}>
+        <div 
+            ref={elementRef} 
+            id="about" 
+            className={`${styles.teks_about} ${isSeen ? styles.seen : ''}`}
+        >
             <p className={styles.creative}>CREATIVE VISUAL</p>
             <div className={styles.porto}>
                 <h1 className={styles.petik}>"</h1>

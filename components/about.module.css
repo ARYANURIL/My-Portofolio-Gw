@@ -1,9 +1,13 @@
 @import url('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
     --font-montserrat: 'Montserrat';
     --kuning-cerah: #FFEA00;
     --putih: white;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+    --font-intermie: 'Inter', sans-serif;
 }
 
 .teks_about {
@@ -12,6 +16,11 @@
     justify-content: center;
     color: white;
     width: 700px;
+    font-family: var(--font-intermie);
+    font-size: 15px;
+    opacity: 0;
+    transform: translateX(-60px); 
+    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .creative {
@@ -68,4 +77,10 @@
     color: var(--kuning-cerah);
     font-family: sans-serif;
     font-weight: bold;
+    font-size: 18px;
+}
+
+.teks_about.seen {
+    opacity: 1;
+    transform: translateX(0); 
 }
