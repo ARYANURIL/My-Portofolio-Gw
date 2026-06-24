@@ -341,7 +341,7 @@ export default function App() {
                 </div>
             </div>
             
-            <div className={styles.box_element}>
+            <div className={styles.box_element}>~
                 <div className={styles.box}>
                     <div className={styles.box_code_qr}>
                         <div className={styles.code_qr}>
