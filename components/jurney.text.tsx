@@ -41,7 +41,7 @@ export default function text() {
                     <h1 className={styles.text}>JURNEY</h1>
                 </div>
                 <div className={styles.text2}>
-                    <p>Perjalanan saya di dunia digital dimulai dari rasa penasaran yang besar terhadap bagaimana sebuah teknologi bekerja. Saat ini, di sela-sela aktivitas sekolah kelas 9, saya mendedikasikan waktu luang untuk mengeksplorasi dan mengasah keahlian di bidang teknologi serta industri kreatif. Dari menulis baris kode pemrograman yang logis hingga merancang visual yang estetis, setiap proses belajar adalah langkah bagi saya untuk terus berkembang dan menciptakan karya-karya baru yang bermanfaat.</p>
+                    <p>Perjalanan saya di dunia digital dimulai dari rasa penasaran yang besar terhadap bagaimana sebuah teknologi bekerja. saat ini, di sela-sela aktivitas sekolah, saya mendedikasikan waktu luang untuk mengeksplorasi dan mengasah keahlian di bidang teknologi serta industri kreatif. Dari menulis baris kode pemrograman yang logis hingga merancang visual yang estetis, setiap proses belajar adalah langkah bagi saya untuk terus berkembang dan menciptakan karya-karya baru yang bermanfaat.</p>
                 </div>
                 <div className={styles.jurney}>
                     <Jurney />

@@ -51,7 +51,6 @@ export default function App() {
     const [sedangMengirim, setSedangMengirim] = useState(false)
     const [pesanError, setPesanError] = useState(false)
 
-    // TAMBAHAN: State dan Ref untuk IntersectionObserver
     const [isSeen, setIsSeen] = useState(false)
     const containerRef = useRef<HTMLDivElement>(null)
 
@@ -337,7 +336,7 @@ export default function App() {
             <div className={styles.text}>
                 <h1 className={styles.teks}>CONTACT</h1>
                 <div className={styles.textP}>
-                    <p id={styles.text}>Punya proyek seru, pertanyaan seputar coding, atau cuma mau kenalan? Yuk, ngobrol! Kamu bisa isi formulir, scan QR Code, atau langsung hubungi salah satu media sosial saya di bawah ini. Saya akan sangat senang membaca pesanmu!</p>
+                    <p id={styles.text}>Kamu punya proyek seru, pertanyaan seputar coding, atau cuma mau kenalan? Yuk, ngobrol! Kamu bisa isi formulir, scan QR Code, atau langsung hubungi salah satu media sosial saya di bawah ini. Saya akan sangat senang membaca pesanmu!</p>
                 </div>
             </div>
             
@@ -348,7 +347,7 @@ export default function App() {
                             <div id={styles.qr_code} className="contact_qr_box">
                                 <QRCodeSVG 
                                     value="https://discord.gg/WceNhAQnP" 
-                                    size={110} // Ukuran QR Code-nya
+                                    size={110} // Ukuran QR Code-nya~
                                     bgColor={"#ffffff"}
                                     fgColor={"#000000"}
                                     level={"M"}
